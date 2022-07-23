@@ -1,0 +1,182 @@
+main{
+  overflow: hidden;
+}
+.first_part{
+  height: 100vh;
+  width: 100vw;
+  background: url(../../../assets/images/hero-home.jpg) no-repeat;
+  background-size: cover;
+  background-position-x: 75%;
+  position: relative;
+}
+.txt{
+  position: absolute;
+  bottom: 10vh;
+  left: 0;
+  right: 0;
+  text-shadow: 0 2px 2px rgb(0 0 0 / 60%);
+  font-family: Gilroy;
+  width: 61%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 32px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+}
+.large_txt{
+  letter-spacing: 3px;
+  font-size: 80px;
+  line-height: 1.1;
+}
+.second_part{
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+.sec_light_txt{
+color: rgb(0, 0, 0);
+font-size: 19px;
+font-weight: 300;
+margin: 2px auto;
+margin-bottom: 15px;
+width: 500px;
+}
+.blue_txt{
+  margin-top: 50px;
+  font-family: Gilroy;
+  font-size: 73px;
+  color:#15356E;
+}
+.bold_black_txt{
+  font-weight: 600;
+  font-size: 32px;
+  letter-spacing: 0.2px;
+  margin-top: -15px;
+}
+.images_sec{
+  justify-content: center;
+}
+.sec_first_icon{
+  color: #0C9DE0;
+  margin-top: 30px;
+  margin-bottom: -15px;
+}
+.fixed-txt{
+  margin-top: 5px;
+  font-family: Gilroy;
+  font-size: 65px;
+  color:#15356E;
+}
+.sec_last_icon{
+  color: #B7E2F6;
+  margin-top: 10px;
+  margin-bottom: 80px;
+}
+.third_bg{
+  height: 55rem;
+  width: 100vw;
+  background: url(../../../assets/images/optimize-business.jpg) no-repeat 0 25%;
+  background-size: cover;
+}
+.third_part{
+  text-shadow: 0 2px 7px rgb(0 0 0 / 60%);
+  color: white;
+  flex-direction: column;
+  align-items:center;
+}
+.third_title{
+  margin-top: 18rem;
+  margin-left: 55rem;
+  font-family: Gilroy;
+  font-size: 4.55rem;
+}
+.list{
+  margin-left: 39.5rem;
+  font-weight: 400;
+  font-size: 1.12rem;
+  letter-spacing: 0.6px;
+}
+.third_read{
+  margin-left: 18rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-top:2rem;
+  padding: 5px 40px;
+  font-size: 17px;
+  border: 2px solid white;
+  border-radius: 40px;
+}
+.fourth_part{
+  background-color: #15356E;
+}
+.fourth_container{
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0rem 1rem 0rem;
+}
+.fourth_part_txt{
+  position: relative;
+  right: 3.3rem;
+  color: white;
+  font-weight: 600;
+  font-size: 3.3rem;
+  width: 33rem;
+  line-height: 3.5rem;
+}
+.fourth_part_img{
+  position: relative;
+  left: 1.5rem;
+}
+.fourth_selected_text{
+  color: #B7E2F6;
+}
+.fifth_part{
+  height: 45rem;
+  background: url(../../../assets/images/agile-workforce-desktop.jpg) no-repeat 25%;
+  background-size: cover;
+}
+.fifth_txt{
+  font-family: gilroy;
+  width: 69rem;
+  color: white;
+  font-size: 4.53rem;
+  text-align: center;
+  position: relative;
+  top: 23rem;
+  line-height: 5rem;
+  margin: auto;
+}
+.fifth_txt span{
+  font-family: gilroy;
+}
+.vid{
+  position: relative;
+}
+
+#myVideo {
+  object-fit: fill;
+  height: 75vh;
+  width: 100vw;
+}
+.eighth_part{
+  width: 100vw;
+}
+.eighth_txt{
+  width: 65rem;
+  margin: auto;
+  text-align: center;
+  margin-top: 3.5rem;
+  margin-bottom: 1.5rem;
+}
+.eighth_lg_txt{
+  font-family: gilroy;
+  color: #15356E;
+  font-size: 4.5rem;
+  line-height: 4.5rem;
+}
+.eighth_sm_txt{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.17rem;
+  margin-top: 1rem;
+}

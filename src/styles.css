@@ -1,0 +1,11 @@
+@font-face {
+  font-family: gilroy;
+  src: url(./assets/fonts/FontsFree-Net-Gilroy-ExtraBold.ttf);
+}
+*{
+  font-family: 'Roboto', sans-serif;
+}
+body{
+  width: 100vw;
+  overflow: hidden;
+}
