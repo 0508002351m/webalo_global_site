@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as $ from "jQuery";
 
 @Component({
   selector: 'app-navbar',
@@ -23,6 +24,20 @@ export class NavbarComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+      $(window).scroll(function(){
+        var scroll:any = $(window).scrollTop();
+        if (scroll > 50) {
+          $("nav").css("background" , "#303030");
+          $(".right_side").css("transform" , "translate(10px,-10px)");
+          $(".logo").css("transform" , "translate(-10px,-10px)")
+
+        }
+        else{
+          $("nav").css("background" , "transparent");
+          $(".right_side").css("transform" , "translate(-5px,5px)");
+          $(".logo").css("transform" , "translate(-5px,5px)")
+        }
+      })
   }
 
 }

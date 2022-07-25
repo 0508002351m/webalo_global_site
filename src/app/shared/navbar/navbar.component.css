@@ -1,11 +1,12 @@
 nav{
   width: 100vw;
-  position: absolute;
+  height: 9vh;
+  position: fixed;
   z-index: 99;
-  margin-top: 1.5rem;
+  padding-top: 1.5rem;
 }
 .container{
-  width: 100%;
+  width: 80%;
   justify-content: space-around;
   position: relative;
 }
@@ -13,12 +14,15 @@ nav{
   margin-top: 0.7rem;
 }
 button{
+  white-space:nowrap;
   margin-top: 0.6rem;
   background-color: #2091f5;
   color: rgba(255, 255, 255, 0.69);
   border: none;
   border-radius: 5px;
   padding: 0.25rem 1.1rem;
+  margin-left:3rem;
+  transform: scaleY(500px)
 }
 ul {
   list-style-type: none;
@@ -38,11 +42,12 @@ li a:hover, .dropdown:hover .dropbtn, button:hover {
   text-shadow: 0 0.2px 0.2px rgba(255, 255, 255, 0.718);
 }
 .dropdown-content {
-  visibility: hidden;
+  display: none;
+  position: absolute;
   background-color: #303030;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 999;
+  z-index: 9999999;
 }
 .dropdown-content a {
   color: rgb(255, 255, 255);
@@ -55,5 +60,16 @@ li a:hover, .dropdown:hover .dropbtn, button:hover {
 .dropdown-content a:hover {background-color: #067ee7;}
 
 .dropdown:hover .dropdown-content {
-  visibility: visible;
+  display: block;
+}
+@media(max-width:1000px){
+  .container{
+    width: 100%;
+  }
+  li a, .dropbtn {
+    padding: 14px 5px;
+  }
+  button{
+    padding: 0.25rem 0.5rem ;
+  }
 }

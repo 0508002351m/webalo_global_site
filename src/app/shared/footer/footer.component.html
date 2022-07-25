@@ -1,1 +1,67 @@
-
+<footer>
+  <div class="container d-flex">
+    <div class="left_side">
+      <div class="left_upper">
+        Webalo, the Platform for the Frontline Workforce, is a software platform that digitizes tasks and activities for frontline workers, providing real-time operational visibility and driving process optimization and improvement, across all areas of business operations. Webalo is enterprise grade, closely integrated with enterprise and industrial software systems, such as Microsoft, SAP, Rockwell, and Siemens. Built to operate in the face of massive amounts of real-time transactional usage by thousands of workers, Webalo helps the workforce make better, more informed decisions, and makes their businesses more productive.
+      </div>
+      <div class="left_lower">
+        <div class="d-flex">
+          <div class="titles">
+            <ul class="title">
+              <ng-container *ngFor="let item of nav_titles">
+                <li>
+                  <a href="#home">
+                    {{item.title}}
+                  </a>
+                </li>
+              </ng-container>
+              <li class="dropdown">
+                <a href="" class="">
+                  About
+                  <i class="fa-solid fa-caret-down"></i>
+                </a>
+                <div class="dropdown-content" *ngFor="let item of nav_about">
+                  <a href="#">{{item.title}}</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="right_side">
+      <div class="upper_icons d-flex">
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+        <i class="fa-brands fa-youtube"></i>
+      </div>
+      <div class="follow"></div>
+      <div class="contact_us">
+        <div class="text-light h5"><b>Connect with us</b></div>
+        <div class="mb-4"><small>1-310-828-7335</small></div>
+        <div class="send_us mb-4 d-flex">
+          <div>
+          <i class="fa-solid fa-envelope"></i>
+          General Questions
+          </div>
+          <div>
+          <i class="fa-solid fa-envelope"></i>
+          Contact Sales
+          </div>
+          <div>
+          <i class="fa-solid fa-envelope"></i>
+          Partner Inquiries
+          </div>
+        </div>
+      </div>
+      <div class="lower_icons d-flex">
+        <i class="fa-brands fa-apple"></i>
+        <i class="fa-brands fa-android"></i>
+      </div>
+      <div class="footer_right mt-4"><small>
+        © 2022 Webalo, Inc. All rights reserved.
+        Privacy</small>
+      </div>
+    </div>
+  </div>
+</footer>
