@@ -9,18 +9,18 @@
           <div class="titles">
             <ul class="title">
               <ng-container *ngFor="let item of nav_titles">
-                <li>
+                <li class="list_item">
                   <a href="#home">
                     {{item.title}}
                   </a>
                 </li>
               </ng-container>
               <li class="dropdown">
-                <a href="" class="">
+                <a class="about">
                   About
                   <i class="fa-solid fa-caret-down"></i>
                 </a>
-                <div class="dropdown-content" *ngFor="let item of nav_about">
+                <div class="dropdown-content footer_drop" *ngFor="let item of nav_about">
                   <a href="#">{{item.title}}</a>
                 </div>
               </li>

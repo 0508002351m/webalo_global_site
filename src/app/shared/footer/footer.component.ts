@@ -23,6 +23,10 @@ export class FooterComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    $(".about").click(function () {
+        $(".footer_drop").toggleClass("d-block")
+    }
+    )
   }
 
 }

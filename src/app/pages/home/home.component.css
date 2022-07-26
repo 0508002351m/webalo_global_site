@@ -143,6 +143,9 @@ width: 500px;
     .images_sec img{
       width: 360px;
     }
+    .sec_light_txt{
+      width: 95%;
+      }
   }
 .third_bg{
   height: 55rem;
@@ -265,13 +268,28 @@ width: 500px;
     margin: auto;
   }
   .fourth_part_txt{
+    text-align: center;
     font-size: 1.7rem;
     line-height: 2.4rem;
     width: 100%;
+    margin: auto;
     margin-bottom: 3rem;
   }
   .fourth_part_img{
-    margin-left:1.5rem;
+    margin: auto;
+    left: 0rem;
+  }
+}
+@media(max-width:600px){
+  .fourth_container{
+    width: 100%;
+  }
+  .fourth_part_txt{
+    font-size: 1.4rem;
+    width: 90%;
+  }
+  .fourth_part_img img{
+    width: 250px;
   }
 }
 .fifth_part{
@@ -332,16 +350,20 @@ width: 500px;
     width: 20rem;
   }
 }
+.sixth_part{
+  max-width: 100vw;
+  overflow-x: hidden;
+}
 .sixth_upper{
   margin: auto;
-  margin-top: 8rem;
+  margin-top:3rem;
   width: 65rem;
 }
 .sixth_upper_content, .sixth_lower_content{
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 5rem;
+  margin-bottom: 1rem;
 }
 .upper_left_content, .lower_right_content{
   width: 24rem;
@@ -362,7 +384,7 @@ width: 500px;
   display: none;
 }
 .sixth_last_img{
-  width: 100vw;
+  width: 100%;
   height: 60vh;
   background: url("../../../assets/images/hand-fade-background.jpg") no-repeat;
   background-size: cover;
@@ -380,9 +402,6 @@ width: 500px;
   line-height: 3.5rem;
 }
 @media(max-width:1100px){
-  .sixth_upper{
-    width: 45rem;
-  }
   .sixth_coordinate{
     width: 80%;
     text-align: center;
@@ -400,15 +419,27 @@ width: 500px;
   font-size: 40px;
   line-height: 2.5rem;
 }
+  .sixth_upper{
+    width: 100%;
+  }
   .upper_left_content, .lower_right_content{
-    width: 15rem;
-    font-size: 0.9rem;
+    width: 25rem;
+    font-size: 1rem;
     font-weight: 300;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    margin: auto;
+  }
+  .upper_left_content, .upper_right_content{
+    margin: auto;
   }
   .upper_right_content img, .lower_left_content img{
     width: 25rem;
-    font-size: 1.2rem;
-    font-weight: 300;
+    display: block;
+    margin: auto;
+  }
+  .lower_left_content{
     margin: auto;
   }
   .coordinate_img{
@@ -420,28 +451,54 @@ width: 500px;
     margin: auto;
     margin-top: 4rem;
   }
-}
-@media(max-width:1100px){
-  .sixth_upper{
-    width: 35rem;
+  .sixth_last_img{
+    height: 30vh;
   }
-  .upper_left_content, .lower_right_content{
-    width: 90%;
-    font-size: 0.8rem;
-    font-weight: 300;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-    text-align: center;
+}
+
+@media(max-width:800px){
+  .sixth_upper{
+    flex-wrap: wrap;
+  }
+.upper_left_content, .lower_right_content{
+  width: 18rem;
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  text-align: center;
+  margin: auto;
+}
+.upper_right_content img, .lower_left_content img{
+  width: 15rem;
+  display: block;
+  margin: auto;
+}
+.big_dark_blue{
+  font-size: 30px;
+  line-height: 2rem;
+}
+.big_light_blue{
+  font-size: 30px;
+  line-height: 2rem;
+}
+}
+@media(max-width:550px){
+  .sixth_last_img{
+    height: 17vh;
+  }
+  .sixth_upper{
+    margin-top:-0.05rem;
   }
   .upper_right_content img, .lower_left_content img{
-    width: 90%;
-    font-size: 1.2rem;
-    font-weight: 300;
-  }
-}
-@media(max-width:700px){
-  .sixth_coordinate{
     width: 100%;
+    margin-bottom: 1rem;
+  }
+  .sixth_upper_content{
+    transform: rotate(180deg);
+  }
+  .upper_left_content, .upper_right_content{
+    transform: rotate(180deg);
   }
 }
 .vid{
@@ -461,7 +518,7 @@ width: 500px;
   margin: auto;
   text-align: center;
   margin-top: 3.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 3.5rem;
 }
 .eighth_lg_txt{
   font-family: gilroy;
@@ -479,7 +536,7 @@ width: 500px;
     width: 70%;
     margin: auto;
     text-align: center;
-    margin-top: 3.5rem;
+    margin-top: 1.5rem;
     margin-bottom: 1.5rem;
   }
   .eighth_lg_txt{
